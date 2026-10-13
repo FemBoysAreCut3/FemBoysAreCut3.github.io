@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FemBoysAreCut3</title>
+    <meta name="description" content="Joé/Rena – Minecraft content creator and developer: maps, plugins, server templates and modpacks.">
+    <meta property="og:title" content="FemBoysAreCut3">
+    <meta property="og:description" content="Joé/Rena – Minecraft content creator and developer: maps, plugins, server templates and modpacks.">
+    <link rel="icon" href="assets/img/favicon.ico">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/tool.css">
+</head>
+<body>
+    <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+    <div id="overlay" class="overlay">
+        <button type="button" id="enter-button" class="overlay__button">Click here!</button>
+    </div>
+
+    <div id="site" class="site is-hidden">
+        <header class="site-header">
+            <div class="site-header__brand">
+                <h1 class="site-title" id="site-title">FemBoysAreCut3</h1>
+                <p class="site-subtitle" id="site-subtitle"></p>
+            </div>
+            <nav id="main-nav" class="main-nav" aria-label="Main navigation"></nav>
+        </header>
+
+        <main class="site-main">
+            <!-- Home Sektion -->
+            <section id="home" class="page" data-page>
+                <article class="about card">
+                    <img class="about__avatar" id="about-avatar" src="https://avatars.githubusercontent.com/u/136980449?v=4" alt="Profilbild" width="140" height="140">
+                    <h2 class="about__title">Aboutme</h2>
+                    <p class="about__text">
+                        Hi, I'm Joé/Rena! I'm a Minecraft content creator and developer.
+                        I'm doing maps, plugins, premade server templates, and modpacks for Minecraft.
+                    </p>
+                </article>
+                <ul id="social-links" class="social-links" aria-label="Social media"></ul>
+            </section>
+
+            <!-- Discord Icon Downloader Sektion -->
+            <section id="discord-icon" class="page" data-page>
+                <article class="tool card">
+                    <h1>Discord Server Icon Downloader</h1>
+                    <p>Enter a Discord invite link to get the server icon.</p>
+
+                    <form id="icon-form" class="tool__form">
+                        <label class="is-hidden" for="invite-input">Discord invite link</label>
+                        <input id="invite-input" type="text" placeholder="discord.gg/your-invite" autocomplete="off" required>
+                        <button type="submit">Fetch icon</button>
+                    </form>
+
+                    <p id="error" class="tool__error" role="alert" hidden></p>
+
+                    <div id="result" class="tool__result" hidden>
+                        <img id="icon" src="" alt="Server icon">
+                        <a id="icon-link" href="" target="_blank" rel="noopener noreferrer"></a>
+                    </div>
+                </article>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <p>© <span id="footer-year"></span> FemBoysAreCut3</p>
+        </footer>
+    </div>
+
+    <noscript><p class="noscript">This page needs JavaScript to show its content.</p></noscript>
+    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/tools/discord-icon.js"></script>
+</body>
+</html>
