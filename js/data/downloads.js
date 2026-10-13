@@ -47,6 +47,7 @@ export const sections = [
         id: "clients",
         title: "Clients",
         items: [
+            { title: "FemCraft", url: "https://modrinth.com/modpack/femcraftclient", description: "The best Client/Modpack for Latest Minecraft" },
             { title: "iZeMod 3", url: "https://github.com/femboysarecut3/izemod", description: "Reupload of the Old IzeMod 1.13 MCP Client" },
             { title: "iZeMod 5", url: "https://github.com/iZeStudios/iZeMod", description: "Offical IzeMod 5 Release based on Fabric" },
             { title: "BetterCraft", url: "https://gitlab.com/website35918/data/-/tree/main/clients", description: "1.8/1.12 Based MCP Client by NZXTER (Use at your own Risk)" },
