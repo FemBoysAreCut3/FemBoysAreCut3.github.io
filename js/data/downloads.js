@@ -15,7 +15,7 @@ export const sections = [
             { title: "ProtocolSupportBungee", url: "https://modrinth.com/plugin/protocolsupportbungee", description: "Add 1.4.7, 1.5.2, 1.6.* clients passtrough support to your bungeecord" },
             { title: "BleXploit", url: "https://modrinth.com/plugin/blexploit", description: "Minecraft Spigot Troll Plugin - development since 2014 with over 100 troll features and GUI." },
             { title: "MOTDCrashPlugin", url: "https://github.com/FemBoysAreCut3/MOTDCrashPlugin", description: "If you put the plugin on a Minecraft server and the server is entered in the server list of the victim than crashes his entire game, the whole thing goes on and on until he deletes the file under '%appdata%\\.minecraft\\servers.dat'." },
-            { title: "GriefPlugin Collection", url: "https://archive.org/download/griefplugin-collection-by-grafvillainous", description: "GriefPlugins Collected by Me" },
+            { title: "GriefPlugin Collection", url: "https://github.com/AkotoWeed/GriefPlugins/archive/refs/heads/main.zip", description: "GriefPlugins Collected by Me" },
             { title: "Nzxters Plugins", url: "https://gitlab.com/website35918/data/-/tree/main/plugins", description: "Plugins made by NZXTER (Use at your Own Risk)" },
         ],
     },
