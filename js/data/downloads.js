@@ -3,11 +3,11 @@ export const sections = [
         id: "plugins",
         title: "Plugins",
         items: [
-            { title: "LogCleaner", url: "https://modrinth.com/plugin/serverlogcleaner", description: "Delete old server logs and crash reports." },
-            { title: "EntityManager",  url: "https://modrinth.com/plugin/entitymanager", description: "Advanced mob control with per-world whitelist/blacklist." },
             { title: "AutoServerUpdaterX", url: "https://modrinth.com/plugin/autoserverupdaterx", description: "Automatically updates the server to the latest build for your version" },
             { title: "AutoProxyUpdater", url: "https://modrinth.com/plugin/autoproxyupdater", description: "Automatically updates your Velocity Proxy to the latest build for your version" },
             { title: "AutoRestartBungee", url: "https://modrinth.com/plugin/autorestartbungee", description: "Automaticly Restarts your BungeeCord (useful if you update over the start script" },
+            { title: "LogCleaner", url: "https://modrinth.com/plugin/serverlogcleaner", description: "Delete old server logs and crash reports." },
+            { title: "EntityManager",  url: "https://modrinth.com/plugin/entitymanager", description: "Advanced mob control with per-world whitelist/blacklist." },
             { title: "Pings", url: "https://modrinth.com/plugin/dcpings", description: "Pings in Minecraft just like on Discord." },
             { title: "StairFix", url: "https://modrinth.com/plugin/stairfix", description: "Fixes Minecrafts Stupid Stair Crafting Recipe" },
             { title: "ConfigSearcher", url: "https://modrinth.com/plugin/configsearcher", description: "Finds strings in your Configs and Plugins" },
