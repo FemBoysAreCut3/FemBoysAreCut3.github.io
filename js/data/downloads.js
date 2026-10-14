@@ -53,7 +53,7 @@ export const sections = [
             { title: "Vandalism Client 1.21.1", url: "https://github.com/FemBoysAreCut3/Vandalism/releases/tag/3.9.0-SNAPSHOT", description: "Cheat, Crash & Exploit Client by NekosAreKawaii." },
             { title: "BetterCraft", url: "https://gitlab.com/website35918/data/-/tree/main/clients", description: "1.8/1.12 Based MCP Client by NZXTER (Use at your own Risk)" },
             { title: "EaZy Client (MC 1.8.0)", url: "https://archive.org/details/all-eazy-client-versions-and-tools-from-team-haxor", description: "All EaZy Client versions + other tools from EaZyCode." },
-            { title: "SidCool Clients", url: "https://www.blackspigot.com/downloads/sidcool-client-collection-deepcraft-meta-viaclient-leaked-by-ryugudev.31967/", description: "SidCool's Clients" },
+            { title: "SidCool Clients", url: "https://files.catbox.moe/834zl4.zip", description: "SidCool's Clients (Not intended for actual use)" },
             { title: "iZeMod 3", url: "https://github.com/femboysarecut3/izemod", description: "Reupload of the Old IzeMod 1.13 MCP Client" },
             { title: "iZeMod 5", url: "https://github.com/iZeStudios/iZeMod", description: "Offical IzeMod 5 Release based on Fabric" },
             { title: "Garkolym Clients & Plugins (2016–2018)", url: "https://archive.org/download/garkolym-collection", description: "All clients & plugins by Garkolym." },
