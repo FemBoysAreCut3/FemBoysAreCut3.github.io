@@ -50,7 +50,7 @@ export const sections = [
         items: [
             { title: "FemCraft", url: "https://modrinth.com/modpack/femcraftclient", description: "The best Client/Modpack for Latest Minecraft" },
             { title: "Meteor Client", url: "https://www.meteorclient.com/", description: "Based Minecraft utility mod." },
-            { title: "Vandalism Client 1.21.1", url: "https://github.com/FemBoysAreCut3/Vandalismus/releases/tag/3.9.0-SNAPSHOT", description: "Cheat, Crash & Exploit Client by NekosAreKawaii." },
+            { title: "Vandalism Client 1.21.1", url: "https://github.com/FemBoysAreCut3/Vandalism/releases/tag/3.9.0-SNAPSHOT", description: "Cheat, Crash & Exploit Client by NekosAreKawaii." },
             { title: "BetterCraft", url: "https://gitlab.com/website35918/data/-/tree/main/clients", description: "1.8/1.12 Based MCP Client by NZXTER (Use at your own Risk)" },
             { title: "EaZy Client (MC 1.8.0)", url: "https://archive.org/details/all-eazy-client-versions-and-tools-from-team-haxor", description: "All EaZy Client versions + other tools from EaZyCode." },
             { title: "SidCool Clients", url: "https://www.blackspigot.com/downloads/sidcool-client-collection-deepcraft-meta-viaclient-leaked-by-ryugudev.31967/", description: "SidCool's Clients" },
