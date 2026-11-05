@@ -5,7 +5,6 @@ const result = document.getElementById("result");
 const icon = document.getElementById("icon");
 const iconLink = document.getElementById("icon-link");
 
-/** Accepts "discord.gg/abc", "https://discord.com/invite/abc?x=1", or just "abc". */
 function extractInviteCode(value) {
     const cleaned = value.trim().split(/[?#]/)[0].replace(/\/+$/, "");
     return cleaned.split("/").pop();

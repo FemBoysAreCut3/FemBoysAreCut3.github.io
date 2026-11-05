@@ -1,4 +1,3 @@
-/** "Click here!" overlay: reveals the site and starts the background music. */
 export function initOverlay({ overlay, button, site, music }) {
     let audio = null;
 

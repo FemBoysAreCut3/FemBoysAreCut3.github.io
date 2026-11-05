@@ -1,4 +1,3 @@
-/** Animated browser tab title: each character "spins" briefly before it locks in. */
 const FRAMES = ["-", "+", "|", "/", "-", "+", "|"];
 const FRAME_DELAY_MS = 80;
 

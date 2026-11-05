@@ -1,5 +1,29 @@
 export const sections = [
     {
+        id: "femcraft",
+        title: "FemCraft",
+        items: [
+            { title: "FemCraft", url: "https://modrinth.com/modpack/femcraftclient", description: "The best Client/Modpack for Latest Minecraft" },
+            { title: "FemCraft Installer", url: "https://github.com/FemCraftClient/FemCraft-Installer/releases", description: "Installer for FemCraft" },
+            { title: "FemCraft Meteor Addon", url: "https://github.com/FemCraftClient/Update/raw/refs/heads/main/26.3/femcraft-meteor-addon.jar", description: "Meteor addon for FemCraft" },
+        ],
+    },
+    {
+        id: "clients",
+        title: "Clients",
+        items: [
+            { title: "FemCraft", url: "https://modrinth.com/modpack/femcraftclient", description: "The best Client/Modpack for Latest Minecraft" },
+            { title: "Meteor Client", url: "https://www.meteorclient.com/", description: "Based Minecraft utility mod." },
+            { title: "Vandalism Client 1.21.1", url: "https://github.com/FemBoysAreCut3/Vandalism/releases/tag/3.9.0-SNAPSHOT", description: "Cheat, Crash & Exploit Client by NekosAreKawaii." },
+            { title: "BetterCraft", url: "https://gitlab.com/website35918/data/-/tree/main/clients", description: "1.8/1.12 Based MCP Client by NZXTER (Use at your own Risk)" },
+            { title: "EaZy Client (MC 1.8.0)", url: "https://archive.org/details/all-eazy-client-versions-and-tools-from-team-haxor", description: "All EaZy Client versions + other tools from EaZyCode." },
+            { title: "SidCool Clients", url: "https://files.catbox.moe/834zl4.zip", description: "SidCool's Clients (Not intended for actual use)" },
+            { title: "iZeMod 3", url: "https://github.com/femboysarecut3/izemod", description: "Reupload of the Old IzeMod 1.13 MCP Client" },
+            { title: "iZeMod 5", url: "https://github.com/iZeStudios/iZeMod", description: "Offical IzeMod 5 Release based on Fabric" },
+            { title: "Garkolym Clients & Plugins (2016–2018)", url: "https://archive.org/download/garkolym-collection", description: "All clients & plugins by Garkolym." },
+        ],
+    },
+    {
         id: "plugins",
         title: "Plugins",
         items: [
@@ -42,21 +66,6 @@ export const sections = [
             { title: "Beta 1.7.3 Treehouse", url: "https://www.planetminecraft.com/project/my-minecraft-beta-1-7-3-treehouse-with-a-nice-view/", description: "My Minecraft Beta 1.7.3 TreeHouse with a Nice View" },
             { title: "Block Vanisher", url: "https://www.planetminecraft.com/project/minecraft-block-vanisher/", description: "This redstone contraption is inspired by CraftyMasterman's 'block vanish' machine! Drop a block into the center and watch it magically disappear as pistons close in around it. Some blocks even transform into others – place in iron ore and get raw iron, logs turn into planks, and red wool becomes red glass! This schematic is a fun redstone illusion and can be used to surprise friends or create cool map mechanics. Try it out and maybe even expand upon the idea with your own block transformations!" },
             { title: "TotalBrutal.de Lobby (Dec 2017)", url: "https://www.planetminecraft.com/project/download-totalbrutal-de-lobby-dezember-2017/", description: "This is the old lobby of Totalbrutal.de from December 2017. Perhaps you remember the old days and feel a little nostalgic! This map was once the central meeting point for players on the server. Explore the lovingly crafted details and experience a piece of Minecraft history." },
-        ],
-    },
-    {
-        id: "clients",
-        title: "Clients",
-        items: [
-            { title: "FemCraft", url: "https://modrinth.com/modpack/femcraftclient", description: "The best Client/Modpack for Latest Minecraft" },
-            { title: "Meteor Client", url: "https://www.meteorclient.com/", description: "Based Minecraft utility mod." },
-            { title: "Vandalism Client 1.21.1", url: "https://github.com/FemBoysAreCut3/Vandalism/releases/tag/3.9.0-SNAPSHOT", description: "Cheat, Crash & Exploit Client by NekosAreKawaii." },
-            { title: "BetterCraft", url: "https://gitlab.com/website35918/data/-/tree/main/clients", description: "1.8/1.12 Based MCP Client by NZXTER (Use at your own Risk)" },
-            { title: "EaZy Client (MC 1.8.0)", url: "https://archive.org/details/all-eazy-client-versions-and-tools-from-team-haxor", description: "All EaZy Client versions + other tools from EaZyCode." },
-            { title: "SidCool Clients", url: "https://files.catbox.moe/834zl4.zip", description: "SidCool's Clients (Not intended for actual use)" },
-            { title: "iZeMod 3", url: "https://github.com/femboysarecut3/izemod", description: "Reupload of the Old IzeMod 1.13 MCP Client" },
-            { title: "iZeMod 5", url: "https://github.com/iZeStudios/iZeMod", description: "Offical IzeMod 5 Release based on Fabric" },
-            { title: "Garkolym Clients & Plugins (2016–2018)", url: "https://archive.org/download/garkolym-collection", description: "All clients & plugins by Garkolym." },
         ],
     },
     {

@@ -18,32 +18,25 @@ export function initBackground(canvas) {
         uniform float iTime;
         uniform vec4 iMouse;
 
-        /*
-          Feel free to do anything you want with this code.
-          This shader uses "runes" code by FabriceNeyret2 (https://www.shadertoy.com/view/4ltyDM)
-          which is based on "runes" by otaviogood (https://shadertoy.com/view/MsXSRn).
-          These random runes look good as matrix symbols and have acceptable performance.
-        */
+        
 
-        const int ITERATIONS = 40;   //use less value if you need more performance
+        const int ITERATIONS = 40;
         const float SPEED = 1.;
 
         const float STRIP_CHARS_MIN =  7.;
         const float STRIP_CHARS_MAX = 40.;
         const float STRIP_CHAR_HEIGHT = 0.15;
         const float STRIP_CHAR_WIDTH = 0.10;
-        const float ZCELL_SIZE = 1. * (STRIP_CHAR_HEIGHT * STRIP_CHARS_MAX);  //the multiplier can't be less than 1.
-        const float XYCELL_SIZE = 12. * STRIP_CHAR_WIDTH;  //the multiplier can't be less than 1.
+        const float ZCELL_SIZE = 1. * (STRIP_CHAR_HEIGHT * STRIP_CHARS_MAX);
+        const float XYCELL_SIZE = 12. * STRIP_CHAR_WIDTH;
 
-        const int BLOCK_SIZE = 10;  //in cells
-        const int BLOCK_GAP = 2;    //in cells
+        const int BLOCK_SIZE = 10;
+        const int BLOCK_GAP = 2;
 
         const float WALK_SPEED = 1. * XYCELL_SIZE;
         const float BLOCKS_BEFORE_TURN = 3.;
 
         const float PI = 3.14159265359;
-
-        //        ----  random  ----
 
         float hash(float v) {
             return fract(sin(v)*43758.5453123);
@@ -78,7 +71,6 @@ export function initBackground(canvas) {
             return fract(sin(p)*43758.5453123);
         }
 
-        //        ----  symbols  ----
         float rune_line(vec2 p, vec2 a, vec2 b) {
             p -= a, b -= a;
             float h = clamp(dot(p, b) / dot(b, b), 0., 1.);
@@ -109,7 +101,6 @@ export function initBackground(canvas) {
             return rune(inner, seed, highlight);
         }
 
-        //        ----  digital rain  ----
         vec3 rain(vec3 ro3, vec3 rd3, float time) {
             vec4 result = vec4(0.);
             vec2 ro2 = vec2(ro3);
@@ -196,7 +187,6 @@ export function initBackground(canvas) {
             return result.xyz * result.a;
         }
 
-        //        ----  main, camera  ----
         vec2 rotate(vec2 v, float a) {
             float s = sin(a);
             float c = cos(a);

@@ -1,4 +1,3 @@
-/** Hash-based page switching and dropdown behaviour. */
 export function initNavigation(nav) {
     const pages = [...document.querySelectorAll("[data-page]")];
     const ids = new Set(pages.map((page) => page.id));

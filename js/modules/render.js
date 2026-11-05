@@ -1,4 +1,3 @@
-/** Builds DOM from data. Uses textContent only (no innerHTML) so data can never inject markup. */
 
 function el(tag, { className, text, attrs } = {}) {
     const node = document.createElement(tag);

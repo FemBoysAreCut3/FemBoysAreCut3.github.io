@@ -8,18 +8,15 @@ import { startTitleAnimation } from "./modules/title-animation.js";
 
 const $ = (id) => document.getElementById(id);
 
-// Static text from config
 $("site-title").textContent = site.name;
 $("site-subtitle").textContent = site.subtitle;
 $("about-avatar").src = site.profileImage;
 $("footer-year").textContent = new Date().getFullYear();
 
-// Generated content
 renderSocialLinks($("social-links"), socialLinks);
 renderPages(document.querySelector(".site-main"), sections);
 renderNav($("main-nav"), sections, toolsMenu);
 
-// Behaviour
 initNavigation($("main-nav"));
 initBackground($("bg-canvas"));
 initOverlay({
