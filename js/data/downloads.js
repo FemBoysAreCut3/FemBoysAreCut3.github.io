@@ -100,6 +100,7 @@ export const sections = [
             { title: "ChaewoCloner", url: "https://github.com/FemBoysAreCut3/ChaewoCloner", description: "Discord Server Cloning Tool" },
             { title: "Discord Mass Reporter", url: "https://github.com/FemBoysAreCut3/Reporter", description: "Discord Mass Report Tool" },
             { title: "DiscordGriefBot", url: "https://github.com/FemBoysAreCut3/DiscordGriefBot", description: "A Simple Discord Grief Bot" },
+            { title: "Waybackmachine Downloader", url: "https://github.com/StrawberryMaster/wayback-machine-downloader/releases", description: "Download an entire website from the Wayback Machine." },
             { title: "Legacy File Conversion Tools", url: "https://github.com/FemBoysAreCut3/Legacy-File-Conversion-Tools/", description: "Convert old document formats." },
             { title: "VTuberWebcam", url: "https://kitsune-one.itch.io/vtuber-webcam", description: "VTuber webcam app (Linux)." },
             { title: "Chunker", url: "https://www.chunker.app/", description: "Java to Bedrock world conversion." },
