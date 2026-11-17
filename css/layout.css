@@ -6,29 +6,77 @@
 
 .site-header {
     position: relative;
+    isolation: isolate;
     z-index: 10;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     gap: var(--space-3);
-    padding: var(--space-4);
-    background: var(--color-surface);
+    padding: var(--space-3) var(--space-4) calc(var(--space-3) + var(--line-width) + 2 * var(--line-rim));
+    background: var(--bar-bg);
+    color: var(--color-bar-text);
 }
 
-.site-title {
+.site-header::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: calc(var(--line-width) + 2 * var(--line-rim));
+    background: var(--rainbow);
+    border-top: var(--line-rim) solid var(--color-black);
+    border-bottom: var(--line-rim) solid var(--color-black);
+    pointer-events: none;
+}
+
+.site-header__right {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-3);
+}
+
+.site-title { line-height: 1; max-width: 100%; }
+
+.site-title__logo {
+    height: 64px;
+    width: auto;
+    max-width: 100%;
+}
+
+.site-title__text {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+}
+
+.no-logo .site-title__logo { display: none; }
+.no-logo .site-title__text {
+    position: static;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    clip-path: none;
     font-size: clamp(2rem, 5vw, 3rem);
-    line-height: 1.1;
-    background: var(--gradient-brand);
+    font-weight: 700;
+    background: var(--rainbow-loop);
+    background-size: 200% 100%;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    animation: glow 2s ease-in-out infinite alternate;
+    -webkit-text-stroke: 2px var(--color-black);
+    paint-order: stroke fill;
+    animation: rainbow-slide 6s linear infinite;
 }
 
 .site-subtitle {
     margin-top: var(--space-1);
-    color: var(--color-muted);
+    color: rgba(255, 255, 255, 0.85);
 }
 
 .site-main {
@@ -43,14 +91,37 @@
 .page.is-active { display: block; }
 
 .page__title {
+    display: inline-block;
     margin-bottom: var(--space-4);
-    font-size: 1.75rem;
+    padding: var(--space-2) var(--space-4);
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: var(--color-accent-strong);
+    border-radius: var(--blob);
+    box-shadow: 5px 5px 0 3px var(--color-shadow);
+    transform: rotate(-1deg);
 }
 
 .site-footer {
-    padding: var(--space-3);
+    position: relative;
+    isolation: isolate;
+    padding: calc(var(--space-3) + var(--line-width) + 2 * var(--line-rim)) var(--space-3) var(--space-3);
     text-align: center;
-    background: var(--color-surface);
+    color: var(--color-bar-text);
+    background: var(--bar-bg);
+}
+
+.site-footer::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: calc(var(--line-width) + 2 * var(--line-rim));
+    background: var(--rainbow);
+    border-top: var(--line-rim) solid var(--color-black);
+    border-bottom: var(--line-rim) solid var(--color-black);
+    pointer-events: none;
 }
 
 .overlay {
@@ -59,10 +130,51 @@
     z-index: 100;
     display: grid;
     place-items: center;
-    background: #000;
+    background: transparent;
 }
 
-@keyframes glow {
-    from { filter: drop-shadow(2px 2px 8px rgba(255, 0, 255, 0.6)); }
-    to   { filter: drop-shadow(4px 4px 16px rgba(255, 0, 255, 0.95)); }
+@keyframes rainbow-slide {
+    from { background-position: 0% 0; }
+    to   { background-position: 200% 0; }
+}
+
+.bar-frames {
+    display: var(--bars-anim);
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    overflow: hidden;
+    border-radius: inherit;
+}
+
+.bar-frames::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    border-radius: inherit;
+    background: var(--bar-dim);
+}
+
+.bar-frames--surface {
+    inset: calc(-1 * var(--edge, 3px));
+    border: var(--edge, 3px) solid transparent;
+    background: var(--rainbow) border-box;
+    box-shadow: 0 0 0 3px var(--color-black);
+}
+
+.bar-frames--surface::after {
+    box-shadow: inset 0 0 0 3px var(--color-black);
+}
+
+.bar-frames--shadow {
+    inset: calc(-1 * var(--edge, 3px));
+    z-index: -2;
+    box-shadow: 0 0 0 3px var(--color-black);
+    transform: translate(var(--so, 5px), var(--so, 5px));
+    transition: transform 0.15s ease;
+}
+
+@media (max-width: 640px) {
+    .site-header { flex-direction: column; align-items: flex-start; }
 }
